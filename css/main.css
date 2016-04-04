@@ -33,6 +33,7 @@ svg {
 
 .btn path:nth-child(2):hover{
   fill: #f60;
+  transition: 200ms linear;
 }
 
 .lines path {
@@ -40,8 +41,21 @@ svg {
   animation: dash 5s linear;
 }
 
+.is-engaged .btn path:nth-child(2){
+  fill: #f60;
+}
+
+
+
+
+
 @keyframes dash {
-  to{
-    stroke-offset: 100;
+
+  0%{
+    stroke-offset: 0;
+  }
+
+  100%{
+    stroke-offset: 480;
   }
 }
