@@ -37,4 +37,11 @@ svg {
 
 .lines path {
   stroke-dasharray: 0, 480;
+  animation: dash 5s linear;
+}
+
+@keyframes dash {
+  to{
+    stroke-offset: 100;
+  }
 }
