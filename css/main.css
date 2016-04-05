@@ -38,13 +38,15 @@ svg {
 
 .lines path {
   stroke-dasharray: 0, 480;
-  animation: dash 5s linear;
 }
 
 .is-engaged .btn path:nth-child(2){
   fill: #f60;
 }
 
+.is-engaged{
+  animation: dash 5s linear;
+}
 
 .btn:active{
 
@@ -54,10 +56,11 @@ svg {
 @keyframes dash {
 
   0%{
-    stroke-offset: 0;
+    stroke-dasharray: 0, 480;
   }
 
   100%{
-    stroke-offset: 480;
+    stroke-dasharray: 480, 480;
   }
 }
+
